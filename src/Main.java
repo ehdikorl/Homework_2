@@ -1,15 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        int nachalnaya_summa = 100;
-        int summa_popolneniya = 1501;
-        int itogovaya_summa;
+        int amount = 100;
+        int deposit = 1501;
+        int total;
 
-        if (summa_popolneniya < 1000) {
-            itogovaya_summa = nachalnaya_summa + summa_popolneniya;
-            System.out.println("Бонусов нет. Итоговый счет " + itogovaya_summa);
+        if (deposit < 1000) {
+            total = amount + deposit;
+            System.out.println("Бонусов нет. Итоговый счет " + total);
         } else {
-            itogovaya_summa = nachalnaya_summa + summa_popolneniya + summa_popolneniya / 100;
-            System.out.println("Итоговый счет " + itogovaya_summa + ". Зачислено бонусов " + summa_popolneniya / 100);
+            total = amount + deposit + deposit / 100;
+            System.out.println("Итоговый счет " + total + ". Зачислено бонусов " + deposit / 100);
         }
 
     }
